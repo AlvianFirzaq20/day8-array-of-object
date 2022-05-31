@@ -4,7 +4,7 @@ const res = require("express/lib/response");
 
 const app = express();
 
-const PORT = 100;
+const PORT = 1600;
 
 // const isLogin = true
 
@@ -65,14 +65,13 @@ app.get('/add-project/delete/:id',(req,res)=>{
 
 app.get('/project-update/:id',(req,res)=>{
 
-  let data = req.params.id
-  res.render('project-update',{id:data});
-
-  
+  let data = req.params.id    
+  let update = project[data]
+  res.render('project-update',{id:data,edit:update});
 }) 
 
 
-app.post('/project-update/:id',(req,res)=>{
+app.post('/project-update/:id',(req,res)=>{ 
   const data = req.params.id;
   const name = req.body.title;
   const start_date = req.body.sdate

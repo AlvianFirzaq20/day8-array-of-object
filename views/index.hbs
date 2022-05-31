@@ -14,7 +14,6 @@
 </head>
 
 <body>
-
     <!-- NAVBAR -->
     <nav class="navbar navbar-expand-lg bg-white fixed-top">
         <div class="container">
@@ -71,9 +70,7 @@
                                                 <h4>Download Cv <a
                                                         href="/public/asset/SURAT-LAMARAN_CV Alvian terbaru 2021.docx"><i
                                                             class="bi bi-file-earmark-arrow-down-fill"></i></a></h4>
-
                                             </div>
-
                                             <div class="sosmed">
                                                 <div class="box">
                                                     <div class="icon"><a href="https://id.linkedin.com/"><i
@@ -122,7 +119,7 @@
             <div class="row">
                 {{#each projects}}
                 <div class="col-md-4 col-sm-6 mb-3">
-                     <div class="card shadow border-0 p-2 h-100" style="width: 100%">
+                    <div class="card shadow border-0 p-2 h-100" style="width: 100%">
                         <img src="/public/asset/JavaScript-featured-duniailkom.png" class="card-img-top" alt="...">
                         <div class="card-body">
                             <a class="project-title text-dark" href="/project-detail/{{@index}}"><h5 class="card-title">{{this.name}}</h5></a>
@@ -132,13 +129,13 @@
                                 {{#if this.html}}
                                 <i class="fa-brands fa-html5"></i>
                                 {{/if}}
-                                 {{#if this.css}}
+                                {{#if this.css}}
                                 <i class="fa-brands fa-css3"></i>
                                 {{/if}}
-                                 {{#if this.react}}
+                                {{#if this.react}}
                                 <i class="fa-brands fa-react"></i>
                                 {{/if}}
-                                 {{#if this.javascript}}
+                                {{#if this.javascript}}
                                 <i class="fa-brands fa-js"></i></i>
                                 {{/if}}
                             </div>

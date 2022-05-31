@@ -13,7 +13,7 @@
     <title>Project Detail</title>
 </head>
 <body>
-     <nav class="navbar navbar-expand-lg bg-gray">
+    <nav class="navbar navbar-expand-lg bg-white fixed-top">
         <div class="container">
             <a class="navbar-brand me-5" href='/'>
                 <img src="/public/asset/logo.png" alt="" />
@@ -32,7 +32,9 @@
                         <a class="nav-link active text-orange" aria-current="page" href='/add-project'>Add Project</a>
                     </li>
                 </ul>
-                <a class=" contactku btn bg-black text-white" href='/contact'> Contact </a>
+                <div class="right-side">
+                    <a href='/contact' class="contactku ">contact me</a>
+                </div>
             </div>
         </div>
     </nav>
@@ -40,19 +42,19 @@
     <!--PROFILE-->
     <div class="background">
     <div class="container h-100">
-        <h1>{{project.name}}</h1>
+        <h1 style="padding-top: 80px;">{{project.name}}</h1>
         <div class="container h-100">
             <div class="row align-items-center h-100 pt-5 pb-5">
-              <form class="col-12 wow fadeInUp " data-wow-delay="0.2s">
+            <form class="col-12 wow fadeInUp " data-wow-delay="0.2s">
                 <div class="card"> 
-                  <div class="card mb-3" style="max-width: auto;">
+                <div class="card mb-3" style="max-width: auto;">
                         <div class="row no-gutters">
                             <div class="col-md-8">
                             <img src="/public/asset/JavaScript-featured-duniailkom.png" class="card-img" alt="...">
                             </div>
                             <div class="col-md-4">
                             <div class="card-body">
-                                 <div class="head-detail-duration mb-3">
+                                <div class="head-detail-duration mb-3">
                                     <h3 style="margin-top: 0px;">Duration</h3>
                                     <p><i class="fa-solid fa-calendar"></i> {{project.start_date}} - {{project.end_date}}</p>
                                     <p><i class="fa-solid fa-calendar-day"></i>{{project.duration}}</p>
@@ -61,16 +63,16 @@
                                 <h3>Tecnologi</h3>
                                 <div class="head-detail-item">
                                 {{#if project.html}}
-                                <i class="fa-brands fa-html5"></i>
+                                <i class="fa-brands fa-html5">  HTML</i>
                                 {{/if}}
-                                 {{#if project.css}}
-                                <i class="fa-brands fa-css3"></i>
+                                {{#if project.css}}
+                                <i class="fa-brands fa-css3">  CSS</i>
                                 {{/if}}
-                                 {{#if project.react}}
-                                <i class="fa-brands fa-react"></i>
+                                {{#if project.react}}
+                                <i class="fa-brands fa-react">  REACT</i>
                                 {{/if}}
-                                 {{#if project.javascript}}
-                                <i class="fa-brands fa-js"></i></i>
+                                {{#if project.javascript}}
+                                <i class="fa-brands fa-js">  JAVASCRIPT</i>
                                 {{/if}}
                                 </div>
                                 </div>
